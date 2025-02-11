@@ -1,11 +1,15 @@
 # React Greetings App
 
 ## Overview
-This project is a simple React application with a backend server that provides random greetings. The frontend is built with React, and the backend is a server that handles API requests.
+This project is a simple **React (frontend)** application with **Express (backend)** that provides random greetings. The frontend is deployed on [Vercel](https://vercel.com/), and the backend is deployed on [Render](https://render.com/).
+
+## Live Demo
+- **Frontend:** [https://react-greetings-frontend.vercel.app](https://react-greetings-frontend.vercel.app)
+- **Backend:** [https://react-greetings-backend.onrender.com/api/greeting](https://react-greetings-backend.onrender.com/api/greeting)
 
 ## Project Structure
 - `frontend`: Contains the React frontend application.
-- `backend`: Contains the backend server.
+- `backend`: Contains the backend Express server.
 
 ## Requirements
 - Node.js (version 14.x or higher)
@@ -23,6 +27,18 @@ This project is a simple React application with a backend server that provides r
     cd react-greetings
     ```
 
+## Running the Application Locally
+
+### Backend Setup
+1. Navigate to the `backend` directory:
+    ```sh
+    cd backend
+    ```
+2. Start the server:
+    ```sh
+    node server.js # Runs on http://localhost:3001
+    ```
+    
 ### Frontend Setup
 1. Navigate to the `frontend` directory:
     ```sh
@@ -34,19 +50,5 @@ This project is a simple React application with a backend server that provides r
     ```
 3. Start the development server:
     ```sh
-    npm start
+    npm start # Runs on http://localhost:3000
     ```
-
-### Backend Setup
-1. Navigate to the `backend` directory:
-    ```sh
-    cd backend
-    ```
-2. Start the server:
-    ```sh
-    node server.js
-    ```
-
-## Running the Application
-1. Start the backend server by following the backend setup instructions.
-2. Start the frontend application by following the frontend setup instructions.
