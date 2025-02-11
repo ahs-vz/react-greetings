@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './GreetingComponent.css';
 
+const API_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:3001"; // Use the assigned port for development or default to 3001
+
 const GreetingComponent = () => {
     const [greeting, setGreeting] = useState("");
 
     const handleFetchGreeting = async () => {
         try {
-            const response = await axios.get("http://localhost:3001/api/greeting");
+            const response = await axios.get(`${API_URL}/api/greeting`);
             setGreeting(response.data.greeting);
         } catch (error) {
             console.error("Error fetching greeting:", error);

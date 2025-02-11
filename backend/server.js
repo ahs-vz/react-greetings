@@ -2,7 +2,7 @@ const express = require('express'); // Import the express module
 const cors = require("cors"); // Import the cors module
 
 const app = express(); // Create an instance of an Express application
-const PORT = 3001;
+const PORT = process.env.PORT || 3001; // Use the assigned port for development or default to 3001
 
 app.use(cors()); // Enable cross-origin requests
 
